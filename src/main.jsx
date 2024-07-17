@@ -18,8 +18,14 @@ Agregar.onclick = () => {
         celular: celular.value
     }
 
-    guardarContacto(base, contacto)
-    window.location.href = '/'
+    if (nombre.value === '' || correo.value === '' || celular.value === '') return
+    else {
+        guardarContacto(base, contacto)
+        window.location.href = '/'
+    }
+
+
 
 }
+
 cargarContacto(base, listaContactos)
