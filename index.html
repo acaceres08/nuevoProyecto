@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="index.css">
+  <title>Agenda de Contactos</title>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+
+    <h2>Agenda de Contactos</h2>
+
+    <div class="formulario">
+      <form id="frm" name="frm">
+        <div>
+          <input type="text" placeholder="Nombre del Contacto" id="nombre" name="nombre" class="nombre" />
+          <div class="error" id="nameError"></div>
+        </div>
+
+        <div>
+          <input type="text" placeholder="Correo Electrónico" id="email" name="email" class="email" />
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div>
+          <input type="text" placeholder="Celular" id="celular" name="celular" class="celular" />
+          <div className="error" id="celularError"></div>
+        </div>
+
+        <button type="submit" class="btn-agregar-contacto">Agregar Contacto</button>
+      </form>
+
+      <div class="lista_contactos">
+
+      </div>
+    </div>
+  </div>
+  <div id="root"></div>
+  <script src="src/components/validador.jsx"></script>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="/src/components/menu.jsx"></script>
+  <script src="src/particles.min.js"></script>
+  <script src="src/app.js"></script>
+
+</body>
+
+</html>

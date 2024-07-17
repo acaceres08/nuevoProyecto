@@ -1,0 +1,80 @@
+
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body{
+    background-color: rgba(0,0,0,.8);
+    color: whitesmoke;
+}
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.container{
+    position: relative;
+    width: 90%;
+    margin: 15px auto;
+    z-index: 99;
+    opacity: .85;
+    padding: 20px 30px;
+}
+
+.container h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+}
+
+.formulario{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input{
+    margin: 1em 0rem;
+    line-height: 3rem;
+    width: 50vw;
+    outline: 0;
+    border: 0;
+    color: black;
+}
+ 
+.formulario button{
+    margin: 1rem  0rem;
+    background-color: dodgerblue;
+    border: 0;
+    outline: 0;
+    width: 50vw;
+    height: 3rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.lista_contactos{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.icono{
+    color: tomato;
+    cursor: pointer;
+}
